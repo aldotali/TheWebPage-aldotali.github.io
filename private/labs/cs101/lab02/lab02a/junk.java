@@ -1,1 +1,0 @@
-I am Aldo Tali.
