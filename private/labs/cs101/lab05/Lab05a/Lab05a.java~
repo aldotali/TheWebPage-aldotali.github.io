@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class lab05a
+{
+  public static void main (String[] args)
+  {
+    Scanner scan = new Scanner (System.in) ;
+    for (int k=0; k<1; k++)
+    {
+    
+    final int va = 0;
+    
+    int width;
+    int height;
+    int thickness;
+    char c;
+    
+    System.out.println ( "Enter the width, height and thickness of the rectangle");
+    
+    width = scan.nextInt();
+    height = scan.nextInt();
+    thickness = scan.nextInt();
+    
+    if ( width <= va || height <= va || thickness <= va )
+    {
+      System.out.println ( "Sorry you have entered a negative value");
+    }
+    else
+    {
+      for (int i = va; i < thickness; i++)
+      {
+        for (int j = va; j < width; j++)
+        {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
+      
+      
+      for (int i = va; i < (height-(2*thickness)); i++)
+      {
+        for (int j = va; j < width; j++)
+        {
+          if (j== thickness)
+          {
+            for (int space = va; space < (width-(2*thickness)); space++)
+            {
+              System.out.print(" ");
+              j++;
+            }
+            
+          }
+          System.out.print("*");
+
+        }
+        System.out.println();
+      }
+      
+      
+      for (int i = va; i < thickness; i++)
+      {
+        for (int j = va; j < width; j++)
+        {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
+      
+    }
+    if ((height-(2*thickness)) <= va )
+    {
+      System.out.println("Oopss no hole");
+    }
+
+    System.out.println("Do you want to create another pattern? ");
+    c = scan.next().charAt(0);
+    if (c == 'Y' || c == 'y')
+    {
+     k--;
+    }
+  }
+  }
+  
+}
+
+  
+  

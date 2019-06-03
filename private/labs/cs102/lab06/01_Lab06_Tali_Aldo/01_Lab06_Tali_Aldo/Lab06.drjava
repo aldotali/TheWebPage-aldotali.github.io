@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Testd2.java" package="" timestamp="12-Apr-2016 16:48:19">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Testd.java" package="" timestamp="09-Apr-2016 11:29:38">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Testc.java" package="" timestamp="12-Apr-2016 16:05:02">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab06a.java" package="" timestamp="12-Apr-2016 16:36:18">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab06b.java" package="" timestamp="12-Apr-2016 16:36:18">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab06c.java" package="" timestamp="12-Apr-2016 16:36:18">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab06d2.java" package="" timestamp="12-Apr-2016 16:48:24">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab06d.java" package="" timestamp="12-Apr-2016 16:52:26">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Test.java" package="" timestamp="12-Apr-2016 16:55:50">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Testb.java" package="" timestamp="12-Apr-2016 16:55:50">
+        <select from="218" to="218"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

@@ -1,0 +1,62 @@
+/*
+ * Progam name : Lab06d
+ * Description : returns the ascending numbers with a given number of digits
+ * @author : Aldo Tali 21500097
+ * Version: 1.0;
+ * 
+ * */
+import java.util.*;
+
+public class Lab06d
+{
+    //properties
+    int generator = 0;
+    int[] numbers;
+    String s = "";
+    
+    //checks the  digits of the number
+    public boolean checkDigit2( int num, int n)
+    {
+        if ( n <= 1)
+            return true;
+        else if ( n <=2 )
+            return ( num/10 < num%10);
+        else if ((int)(num/(Math.pow(10,n-1))) < ((int)(num/Math.pow(10,n-2)))%10)
+            return checkDigit((int)(num%(Math.pow(10,n-1))), n-1);
+        else return false;
+    }
+    
+    public void evenNo( int n)
+    {
+         //pass to the number of digits needed
+        if ( generator < Math.pow(10,n-1))
+        { 
+            generator = (int)(Math.pow(10,n-1));
+        }
+        
+        
+        generator += 2;
+        numbers = new int[n/2];
+        
+        for(int i = 0; i < numbers.length; i++)
+        {
+            numbers[i] = generator;
+            generator += 2;
+        }
+        
+        //stops the generation
+//        if ( generator >= Math.pow(10,n))
+//        {
+//            generator = 0;
+//            return s;
+//        }
+        
+        private void checkDigit( int[] num, int start, int n )
+        {
+            if ( checkDigit2( num[start]) )
+                System.out.println(  num[start] + " ");
+            else
+                checkDigit( num, start+1,  n )
+        }
+    }  
+}

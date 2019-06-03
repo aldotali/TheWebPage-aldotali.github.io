@@ -1,0 +1,4 @@
+Please enter 8 integer values
+The value of count is 8
+The sum of the numbers you have entered is: 47
+Please enter 100 integer values

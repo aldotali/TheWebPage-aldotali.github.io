@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+/**
+ * Program name: Lab04b
+ * Description: This program gets integers from the user and sums them without storing them. .
+ * @author Aldo Tali 21500097
+ * version 1.00, 2015/10/22
+ * */
+
+
+public class Lab04b
+{
+  
+  public static void main (String [] args)
+  {
+    Scanner scan = new Scanner (System.in);
+    
+    //constants
+    final int Num_Of_Int = 8;
+    final int Start_Value = 0;
+    final int Num_Of_Values = 100;
+    
+    //variables
+    int count = Start_Value;
+    int count1 = Start_Value;
+    double sum = Start_Value;
+    int n;
+    int min = Start_Value;
+    int max = Start_Value;
+    double average;
+    
+    //get a number of n integers and sum them
+    System.out.println ("Please enter " + Num_Of_Int + " integer values");
+    
+    while (count < Num_Of_Int)
+    {
+      n = scan.nextInt();
+      sum = sum + n;
+      count++;
+    }
+    
+    System.out.println ("The value of count is " + count);
+    System.out.println ("The sum of the numbers you have entered is: " + sum );
+    
+    // get n integers and find min max and average of the numbers 
+    System.out.println ("Please enter " + Num_Of_Values + " integer values");
+    count = Start_Value;
+    sum = Start_Value;
+    while  (count < Num_Of_Values)
+    {
+      n = scan.nextInt();
+      if (count == Start_Value)
+      {
+        min = n;
+        max = n;
+      }
+      if (n <= min)
+      {
+        min = n;
+      }
+      if (n >= max)
+      {
+        max = n;
+      }
+      sum = sum + n;
+      count++;
+    }
+    average = (sum/Num_Of_Values); 
+    System.out.println ("The average of the first " + Num_Of_Values + " values is: " + average);
+    System.out.println ("The minimum of the values is: " + min);
+    System.out.println ("The maximum of the values is: " + max);
+    
+    
+    //Enter integers until you enter a negative value
+    System.out.println ("Please enter integer values");
+    count = Start_Value;
+    sum = Start_Value;
+    while (count1 == Start_Value)
+    {
+      n = scan.nextInt();
+      if (n >= Start_Value)
+      {
+        if (count == Start_Value)
+        {
+          min = n;
+          max = n;
+        }
+        if (n <= min)
+        {
+          min = n;
+        }
+        if (n >= max)
+        {
+          max = n;
+        }
+        sum = sum + n;
+        count++;
+      }
+      else
+      {
+        count1 = Start_Value;
+        count1--;
+      }
+    }
+    
+    count++;
+    average = (sum/count); 
+    count--;
+    System.out.println ("The average of the first " + count + " values is: " + average);
+    System.out.println ("The minimum of the values is: " + min);
+    System.out.println ("The maximum of the values is: " + max);
+    
+  }
+}

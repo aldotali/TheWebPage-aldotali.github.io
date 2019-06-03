@@ -1,0 +1,12 @@
+/*
+ * @author: Aldo Tali
+ * Id: 21500097
+ * Program description: creates a stack using the SimpleList class
+ * 
+ * */
+
+public class SimpleStack
+{
+    //properties
+    private SimpleLinkedList list;
+}
